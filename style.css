@@ -1,0 +1,97 @@
+/* Corpo */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+header{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Estilo relógio */
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: red;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Caixa transparente garantindo centralização adequada dos braços. */
+.sizing-box {
+    fill:none
+}
+
+/* Girar no mesmo sentido. */
+/* Transition se torna opcional */
+#hora,
+#minuto,
+#segundo {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 80px;
+    color: white;
+}
+footer li{
+    display: inline;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+i{
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: center;
+}
+i:hover{
+    color: #333;
+    background-color: white;
+}
